@@ -58,7 +58,7 @@ async def create_order(request: Request):
         ,
             "redirect_urls": {
                 "return_url": "http://localhost:8000/execute-payment",
-                "cancel_url": "http://localhost:8000/"
+                "cancel_url": "https://paypal-api-integration-fastapi-eiptlm6r0-omarios-projects.vercel.app/"
             },
             "application_context": {
                 "brand_name": "ASAS For Furniture",
