@@ -25,7 +25,12 @@ paypalrestsdk.configure({
 async def create_order(request: Request):
     try:
         body = await request.json()
-        cart = body.get('cart', [])
+        cart = [{
+                "product_id": 1,  # Example product ID
+                "name": 'Sample Product',
+                "price": 0.01,
+                "currency": 'CAD'
+            }]#body.get('cart', [])
 
         if not cart:
             raise HTTPException(status_code=400, detail="Cart is empty.")
