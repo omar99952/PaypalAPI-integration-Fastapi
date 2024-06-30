@@ -20,7 +20,7 @@ paypalrestsdk.configure({
     "client_id": os.getenv("PAYPAL_CLIENT_ID"),
     "client_secret": os.getenv("PAYPAL_CLIENT_SECRET")
 })
-BASE_URL = os.getenv("BASE_URL","https://paypal-api-integration-fastapi-eiptlm6r0-omarios-projects.vercel.app/")
+BASE_URL = os.getenv("BASE_URL")
 @app.post("/create-order")
 async def create_order(request: Request):
     try:
