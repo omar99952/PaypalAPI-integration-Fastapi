@@ -57,7 +57,7 @@ async def create_order(request: Request):
 
         ,
             "redirect_urls": {
-                "return_url": f"{BASE_URL}/execute-payment"",
+                "return_url": f"{BASE_URL}/execute-payment",
                 "cancel_url": f"{BASE_URL}
             },
             "application_context": {
